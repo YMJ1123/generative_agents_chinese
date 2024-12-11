@@ -1,30 +1,30 @@
 generate_event_triple_v1.txt
 
-变量: 
+變量:
 !<INPUT 0>! -- 人格的全名。
-!<INPUT 1>! -- 当前动作的描述
+!<INPUT 1>! -- 當前動作的描述
 !<INPUT 2>! -- 人格的全名。
 
 <commentblockmarker>###</commentblockmarker>
-任务：将输入转换为（主词，谓词，宾词）。
+任務：將輸入轉換為（主詞，謂詞，賓詞）。
 
-输入：Sam Johnson在吃早餐。
-输出：(Dolores Murphy, 吃, 早餐) 
+輸入：皇帝在參加早朝。
+輸出：(皇帝, 參加, 早朝)
 ---
-输入： Joon Park在煮咖啡。
-输出： (Joon Park, 煮, 咖啡)
+輸入： 甄嬛在製作手帕。
+輸出： (甄嬛, 製作, 手帕)
 ---
-输入：Jane Cook在睡觉。
-输出： (Jane Cook, 是, 睡觉)
+輸入：華妃在睡覺。
+輸出： (華妃, 是, 睡覺)
 ---
-输入：Michael Bernstein在电脑上写邮件。
-输出： (Michael Bernstein, 写, 邮件)
+輸入：皇帝在書房批閱奏摺。
+輸出： (皇帝, 批閱, 奏摺)
 ---
-输入：Percy Liang在教室里教学生。
-输出： (Percy Liang, 教, 学生)
+輸入：甄嬛在庭院中散步。
+輸出： (甄嬛, 庭院, 散步)
 ---
-输入：Merrie Morris在跑步机上跑步。
-输出： (Merrie Morris, 跑, 跑步机)
+輸入：宮女在房間打掃。
+輸出： (宮女, 房間, 打掃)
 ---
-输入：!<INPUT 0>!在!<INPUT 1>!。 
-输出： (!<INPUT 2>!,
+輸入：!<INPUT 0>!在!<INPUT 1>!。
+輸出： (!<INPUT 2>!,
