@@ -12,6 +12,7 @@ import time
 from utils import *
 
 openai.api_key = openai_api_key
+openai.base_url = "https://api.x.ai/v1"
 
 def temp_sleep(seconds=0.1):
   time.sleep(seconds)
@@ -20,7 +21,7 @@ def ChatGPT_single_request(prompt):
   temp_sleep()
 
   completion = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo", 
+    model="grok-beta", 
     messages=[{"role": "user", "content": prompt}]
   )
   return completion["choices"][0]["message"]["content"]
@@ -45,8 +46,8 @@ def GPT4_request(prompt):
   temp_sleep()
 
   try: 
-    completion = openai.ChatCompletion.create(
-    model="gpt-4", 
+    completion = openai.chat.completions.create(
+    model="grok-beta", 
     messages=[{"role": "user", "content": prompt}]
     )
     return completion["choices"][0]["message"]["content"]
@@ -71,7 +72,7 @@ def ChatGPT_request(prompt, max_tokens=256):
   # temp_sleep()
   try: 
     completion = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo", 
+    model="grok-beta", 
     messages=[{"role": "user", "content": prompt}],
     max_tokens=max_tokens
     )
@@ -280,13 +281,18 @@ def safe_generate_response(prompt,
 def get_embedding(text, model="text-embedding-ada-002"):
   text = text.replace("\n", " ")
   if not text: 
+
     text = "這是空白的"
+
+  ###### Use the OpenAI API to get the embedding of the text.
+  openai.api_key = embedding_openai_api_key
+  openai.base_url = "https://api.openai.com/v1"
   return openai.Embedding.create(
           input=[text], model=model)['data'][0]['embedding']
 
 
 if __name__ == '__main__':
-  gpt_parameter = {"engine": "text-davinci-003", "max_tokens": 50, 
+  gpt_parameter = {"engine": "grok-beta", "max_tokens": 50, 
                    "temperature": 0, "top_p": 1, "stream": False,
                    "frequency_penalty": 0, "presence_penalty": 0, 
                    "stop": ['"']}
