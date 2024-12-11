@@ -12,6 +12,7 @@ import time
 from utils import *
 
 openai.api_key = openai_api_key
+openai.base_url = "https://api.x.ai/v1"
 
 def temp_sleep(seconds=0.1):
   time.sleep(seconds)
@@ -45,7 +46,7 @@ def GPT4_request(prompt):
   temp_sleep()
 
   try: 
-    completion = openai.ChatCompletion.create(
+    completion = openai.chat.completions.create(
     model="grok-beta", 
     messages=[{"role": "user", "content": prompt}]
     )
@@ -283,6 +284,7 @@ def get_embedding(text, model="text-embedding-ada-002"):
     text = "这是空白的"
   ###### Use the OpenAI API to get the embedding of the text.
   openai.api_key = embedding_openai_api_key
+  openai.base_url = "https://api.openai.com/v1"
   return openai.Embedding.create(
           input=[text], model=model)['data'][0]['embedding']
 
