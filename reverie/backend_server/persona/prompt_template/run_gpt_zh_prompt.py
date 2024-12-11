@@ -66,7 +66,7 @@ def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False):
     fs = 8
     return fs
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 5, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 5, 
              "temperature": 0.8, "top_p": 1, "stream": False,
              "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
   prompt_template = "persona/prompt_template/v2_zh/wake_up_hour_v1.txt"
@@ -127,18 +127,18 @@ def run_gpt_prompt_daily_plan(persona,
     return True
 
   def get_fail_safe(): 
-    fs = ['6:00 am起床並完成早晨的日常任務', 
+    fs = ['6:00 am起床并完成早晨的日常任务', 
           '7:00 am吃早餐', 
-          '8:00 am至12:00 pm讀書', 
+          '8:00 am至12:00 pm读书', 
           '12:00 pm吃午餐', 
           '1:00 pm至4:00 pm午休', 
-          '7:00 pm至8:00 pm放鬆並看電視', 
-          '11:00 pm去睡覺']
+          '7:00 pm至8:00 pm放松并看电视', 
+          '11:00 pm去睡觉']
     return fs
 
 
   
-  gpt_param = {"engine": "grok-beta", "max_tokens": 500, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 500, 
                "temperature": 1, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/daily_planning_v6.txt"
@@ -148,7 +148,7 @@ def run_gpt_prompt_daily_plan(persona,
 
   output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
                                    __func_validate, __func_clean_up)
-  output = ([f"在{wake_up_hour}:00 am醒來並完成早晨的日常任務"]
+  output = ([f"在{wake_up_hour}:00 am醒来并完成早晨的日常任务"]
               + output)
 
   if debug or verbose: 
@@ -178,7 +178,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
       schedule_format += f" Activity: [Fill in]\n"
     schedule_format = schedule_format[:-1]
 
-    intermission_str = f"以下是按小時劃分的原本預期"
+    intermission_str = f"以下是按小时划分的原本预期"
     intermission_str += f" {persona.scratch.get_str_firstname()}今日的日程: "
     for count, i in enumerate(persona.scratch.daily_req): 
       intermission_str += f"{str(count+1)}) {i}, "
@@ -228,7 +228,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
     return True
 
   def get_fail_safe(): 
-    fs = "睡覺"
+    fs = "睡觉"
     return fs
 
   # # ChatGPT Plugin ===========================================================
@@ -244,7 +244,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
   #   return True
 
   # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 10") ########
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  # gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v3_ChatGPT/generate_hourly_schedule_v2.txt" ########
@@ -265,7 +265,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
   # # ChatGPT Plugin ===========================================================
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
                "temperature": 0.5, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
   prompt_template = "persona/prompt_template/v2_zh/generate_hourly_schedule_v2.txt"
@@ -326,7 +326,7 @@ def run_gpt_prompt_task_decomp(persona,
     print (all_indices)
 
     summ_str = f'今天是{persona.scratch.curr_time.strftime("%B %d, %Y")}. '
-    summ_str += f'從'
+    summ_str += f'从'
     for index in all_indices: 
       print ("index", index)
       if index < len(persona.scratch.f_daily_schedule_hourly_org): 
@@ -340,7 +340,7 @@ def run_gpt_prompt_task_decomp(persona,
                       + datetime.timedelta(minutes=end_min)) 
         start_time_str = start_time.strftime("%H:%M%p")
         end_time_str = end_time.strftime("%H:%M%p")
-        summ_str += f"{start_time_str} ~ {end_time_str}, {persona.name}計劃{persona.scratch.f_daily_schedule_hourly_org[index][0]}, "
+        summ_str += f"{start_time_str} ~ {end_time_str}, {persona.name}计划{persona.scratch.f_daily_schedule_hourly_org[index][0]}, "
         if curr_f_org_index+1 == index:
           curr_time_range = f'{start_time_str} ~ {end_time_str}'
     summ_str = summ_str[:-2] + "."
@@ -374,18 +374,18 @@ def run_gpt_prompt_task_decomp(persona,
         _cr += [i]
     print(_cr)
     for count, i in enumerate(_cr): 
-      if "（持續時間，分鐘：" in i:
-        k = [j.strip() for j in i.split("（持續時間，分鐘：")]
-      elif "（持續時間，分鐘" in i:
-        k = [j.strip() for j in i.split("（持續時間，分鐘")]
-      elif "(持續時間，分鐘：" in i:
-        k = [j.strip() for j in i.split("(持續時間，分鐘：")]
-      elif "(持續時間，分鐘:" in i:
-        k = [j.strip() for j in i.split("(持續時間，分鐘:")]
-      elif "(持續時間，分鐘" in i:
-        k = [j.strip() for j in i.split("(持續時間，分鐘")]
-      elif "(持續時間, 分鐘" in i:
-        k = [j.strip() for j in i.split("(持續時間, 分鐘")]
+      if "（持续时间，分钟：" in i:
+        k = [j.strip() for j in i.split("（持续时间，分钟：")]
+      elif "（持续时间，分钟" in i:
+        k = [j.strip() for j in i.split("（持续时间，分钟")]
+      elif "(持续时间，分钟：" in i:
+        k = [j.strip() for j in i.split("(持续时间，分钟：")]
+      elif "(持续时间，分钟:" in i:
+        k = [j.strip() for j in i.split("(持续时间，分钟:")]
+      elif "(持续时间，分钟" in i:
+        k = [j.strip() for j in i.split("(持续时间，分钟")]
+      elif "(持续时间, 分钟" in i:
+        k = [j.strip() for j in i.split("(持续时间, 分钟")]
       print(i)
       print(k)
       if len(k) < 2:
@@ -396,10 +396,10 @@ def run_gpt_prompt_task_decomp(persona,
       duration = int(k[1].split("，")[0].strip())
       cr += [[task, duration]]
     if "（" in i:
-      total_expected_min = int(prompt.split("（總持續時間，分鐘")[-1]
+      total_expected_min = int(prompt.split("（总持续时间，分钟")[-1]
                                     .split("）：")[0].strip())
     else:
-      total_expected_min = int(prompt.split("(總持續時間，分鐘")[-1]
+      total_expected_min = int(prompt.split("(总持续时间，分钟")[-1]
                                     .split(")：")[0].strip())
     
     # TODO -- now, you need to make sure that this is the same as the sum of 
@@ -444,10 +444,10 @@ def run_gpt_prompt_task_decomp(persona,
     return gpt_response
 
   def get_fail_safe(): 
-    fs = ["睡覺"]
+    fs = ["睡觉"]
     return fs
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 1000, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 1000, 
              "temperature": 0, "top_p": 1, "stream": False,
              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/task_decomp_v3.txt"
@@ -618,7 +618,7 @@ def run_gpt_prompt_action_sector(action_description,
   #   return True 
 
   # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 20") ########
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  # gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v3_ChatGPT/action_location_sector_v2.txt" ########
@@ -637,7 +637,7 @@ def run_gpt_prompt_action_sector(action_description,
 
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v1_zh/action_location_sector_v1.txt"
@@ -682,7 +682,7 @@ def run_gpt_prompt_action_arena(action_description,
     curr = accessible_arena_str.split(", ")
     fin_accessible_arenas = []
     for i in curr: 
-      if "的房間" in i: 
+      if "的房间" in i: 
         if persona.scratch.last_name in i: 
           fin_accessible_arenas += [i]
       else: 
@@ -739,7 +739,7 @@ def run_gpt_prompt_action_arena(action_description,
     curr = accessible_arena_str.split(", ")
     fin_accessible_arenas = []
     for i in curr: 
-      if "的房間" in i: 
+      if "的房间" in i: 
         if persona.scratch.last_name in i: 
           fin_accessible_arenas += [i]
       else: 
@@ -748,7 +748,7 @@ def run_gpt_prompt_action_arena(action_description,
     # fs = ("kitchen")
     return fs
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v1_zh/action_location_object_vMar11.txt"
@@ -804,7 +804,7 @@ def run_gpt_prompt_action_game_object(action_description,
     fs = ("床")
     return fs
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v1_zh/action_object_v2.txt"
@@ -874,14 +874,14 @@ def run_gpt_prompt_pronunciatio(action_description, persona, verbose=False):
     return True
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 4") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/generate_pronunciatio_v1.txt" ########
   prompt_input = create_prompt_input(action_description)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
   example_output = "🛁🧖‍♀️" ########
-  special_instruction = "輸出的值必須只包含表情符號。" ########
+  special_instruction = "输出的值必须只包含表情符号。" ########
   fail_safe = get_fail_safe()
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -893,7 +893,7 @@ def run_gpt_prompt_pronunciatio(action_description, persona, verbose=False):
 
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 15, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
   # prompt_template = "persona/prompt_template/v2/generate_pronunciatio_v1.txt"
@@ -945,7 +945,7 @@ def run_gpt_prompt_event_triple(action_description, persona, verbose=False):
     return True 
 
   def get_fail_safe(persona): 
-    fs = (persona.name, "在", "空閒")
+    fs = (persona.name, "在", "空闲")
     return fs
 
 
@@ -964,7 +964,7 @@ def run_gpt_prompt_event_triple(action_description, persona, verbose=False):
   #   return True 
 
   # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 5") ########
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  # gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v3_ChatGPT/generate_event_triple_v1.txt" ########
@@ -982,7 +982,7 @@ def run_gpt_prompt_event_triple(action_description, persona, verbose=False):
 
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 30, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 30, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
   prompt_template = "persona/prompt_template/v2_zh/generate_event_triple_v1.txt"
@@ -1033,7 +1033,7 @@ def run_gpt_prompt_act_obj_desc(act_game_object, act_desp, persona, verbose=Fals
     return True 
 
   def get_fail_safe(act_game_object): 
-    fs = f"{act_game_object}在空閒"
+    fs = f"{act_game_object}在空闲"
     return fs
 
   # ChatGPT Plugin ===========================================================
@@ -1050,14 +1050,14 @@ def run_gpt_prompt_act_obj_desc(act_game_object, act_desp, persona, verbose=Fals
     return True 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 6") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/generate_obj_event_v1.txt" ########
   prompt_input = create_prompt_input(act_game_object, act_desp, persona)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
-  example_output = "在修復" ########
-  special_instruction = "輸出應該僅包含應放在<fill in>的短語。" ########
+  example_output = "在修复" ########
+  special_instruction = "输出应该仅包含应放在<fill in>的短语。" ########
   # special_instruction = "" ########
   fail_safe = get_fail_safe(act_game_object) ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
@@ -1068,7 +1068,7 @@ def run_gpt_prompt_act_obj_desc(act_game_object, act_desp, persona, verbose=Fals
 
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 30, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 30, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
   # prompt_template = "persona/prompt_template/v2/generate_obj_event_v1.txt"
@@ -1113,10 +1113,10 @@ def run_gpt_prompt_act_obj_event_triple(act_game_object, act_obj_desc, persona, 
     return True 
 
   def get_fail_safe(act_game_object): 
-    fs = (act_game_object, "在", "空閒")
+    fs = (act_game_object, "在", "空闲")
     return fs
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 30, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 30, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
   prompt_template = "persona/prompt_template/v2_zh/generate_event_triple_v1.txt"
@@ -1191,7 +1191,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
   
   def __func_clean_up(gpt_response, prompt=""):
     new_schedule = prompt + " " + gpt_response.strip()
-    new_schedule = new_schedule.split("修改後的日程：")[-1].strip()
+    new_schedule = new_schedule.split("修改后的日程：")[-1].strip()
     new_schedule = new_schedule.split("\n")
 
     ret_temp = []
@@ -1219,7 +1219,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
           return False 
         if str(type(dur)) != "<class 'int'>":
           return False
-      x = prompt.split("\n")[0].split("原本計劃的日程，從")[-1].strip()[:-1]
+      x = prompt.split("\n")[0].split("原本计划的日程，从")[-1].strip()[:-1]
       x = [datetime.datetime.strptime(i.strip(), "%H:%M %p") for i in x.split(" to ")]
       delta_min = int((x[1] - x[0]).total_seconds()/60)
 
@@ -1256,7 +1256,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
 
     return ret
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 1000, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 1000, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/new_decomp_schedule_v1.txt"
@@ -1318,22 +1318,22 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved,test_input=
       init_act_desc = init_act_desc.split("(")[-1][:-1]
     
     if len(init_persona.scratch.planned_path) == 0 and "等待" not in init_act_desc: 
-      init_p_desc = f"{init_persona.name}已經{init_act_desc}"
+      init_p_desc = f"{init_persona.name}已经{init_act_desc}"
     elif "等待" in init_act_desc:
       init_p_desc = f"{init_persona.name}在{init_act_desc}"
     else: 
-      init_p_desc = f"{init_persona.name}準備{init_act_desc}"
+      init_p_desc = f"{init_persona.name}准备{init_act_desc}"
 
     target_act_desc = target_persona.scratch.act_description
     if "(" in target_act_desc: 
       target_act_desc = target_act_desc.split("(")[-1][:-1]
     
     if len(target_persona.scratch.planned_path) == 0 and "等待" not in init_act_desc: 
-      target_p_desc = f"{target_persona.name}已經{target_act_desc}"
+      target_p_desc = f"{target_persona.name}已经{target_act_desc}"
     elif "等待" in init_act_desc:
       target_p_desc = f"{init_persona.name}在{init_act_desc}"
     else: 
-      target_p_desc = f"{target_persona.name}準備{target_act_desc}"
+      target_p_desc = f"{target_persona.name}准备{target_act_desc}"
 
 
     prompt_input = []
@@ -1370,7 +1370,7 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved,test_input=
 
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 20, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 20, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/decide_to_talk_v2.txt"
@@ -1417,12 +1417,12 @@ def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved,test_input
       loc = ""
       if ":" in init_persona.scratch.act_address:
         loc = init_persona.scratch.act_address.split(":")[-1] + " in " + init_persona.scratch.act_address.split(":")[-2]
-      init_p_desc = f"{init_persona.name}已經{init_act_desc} 在 {loc}"
+      init_p_desc = f"{init_persona.name}已经{init_act_desc} 在 {loc}"
     else: 
       loc = ""
       if ":" in init_persona.scratch.act_address:
         loc = init_persona.scratch.act_address.split(":")[-1] + " in " + init_persona.scratch.act_address.split(":")[-2]
-      init_p_desc = f"{init_persona.name}準備{init_act_desc} at {loc}"
+      init_p_desc = f"{init_persona.name}准备{init_act_desc} at {loc}"
 
     target_act_desc = target_persona.scratch.act_description
     if "(" in target_act_desc: 
@@ -1431,12 +1431,12 @@ def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved,test_input
       loc = ""
       if ":" in target_persona.scratch.act_address:
         loc = target_persona.scratch.act_address.split(":")[-1] + " in " + target_persona.scratch.act_address.split(":")[-2]
-      target_p_desc = f"{target_persona.name}已經{target_act_desc} 在 {loc}"
+      target_p_desc = f"{target_persona.name}已经{target_act_desc} 在 {loc}"
     else: 
       loc = ""
       if ":" in target_persona.scratch.act_address:
         loc = target_persona.scratch.act_address.split(":")[-1] + " in " + target_persona.scratch.act_address.split(":")[-2]
-      target_p_desc = f"{target_persona.name}準備{target_act_desc} at {loc}"
+      target_p_desc = f"{target_persona.name}准备{target_act_desc} at {loc}"
 
     prompt_input = []
     prompt_input += [context]
@@ -1454,21 +1454,21 @@ def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved,test_input
   
   def __func_validate(gpt_response, prompt=""): 
     try: 
-      if gpt_response.split("選項")[-1].strip().lower() in ["2", "1"]: 
+      if gpt_response.split("选项")[-1].strip().lower() in ["2", "1"]: 
         return True
       return False     
     except:
       return False 
 
   def __func_clean_up(gpt_response, prompt=""):
-    return gpt_response.split("選項")[-1].strip().lower() 
+    return gpt_response.split("选项")[-1].strip().lower() 
 
   def get_fail_safe(): 
     fs = "2"
     return fs
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 20, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 20, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/decide_to_react_v1.txt"
@@ -1512,7 +1512,7 @@ def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
       for i in init_persona.a_mem.seq_chat: 
         if i.object == target_persona.scratch.name: 
           v1 = int((init_persona.scratch.curr_time - i.created).total_seconds()/60)
-          prev_convo_insert += f'{str(v1)} 分鐘前，他們進行了以下對話。\n'
+          prev_convo_insert += f'{str(v1)} 分钟前，他们进行了以下对话。\n'
           for row in i.filling: 
             prev_convo_insert += f'{row[0]}: "{row[1]}"\n'
           break
@@ -1539,13 +1539,13 @@ def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
 
     init_persona_curr_desc = ""
     if init_persona.scratch.planned_path: 
-      init_persona_curr_desc = f"{init_persona.name}準備{init_persona.scratch.act_description}"
+      init_persona_curr_desc = f"{init_persona.name}准备{init_persona.scratch.act_description}"
     else: 
       init_persona_curr_desc = f"{init_persona.name}在{init_persona.scratch.act_description}"
 
     target_persona_curr_desc = ""
     if target_persona.scratch.planned_path: 
-      target_persona_curr_desc = f"{target_persona.name}準備{target_persona.scratch.act_description}"
+      target_persona_curr_desc = f"{target_persona.name}准备{target_persona.scratch.act_description}"
     else: 
       target_persona_curr_desc = f"{target_persona.name}在{target_persona.scratch.act_description}"
  
@@ -1583,7 +1583,7 @@ def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
     # print (gpt_response)
 
 
-    gpt_response = (prompt + gpt_response).split("現在他們會談論什麼？")[-1].strip()
+    gpt_response = (prompt + gpt_response).split("现在他们会谈论什么？")[-1].strip()
     content = re.findall('"([^"]*)"', gpt_response)
 
     speaker_order = []
@@ -1611,7 +1611,7 @@ def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
     return convo
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 1000, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 1000, 
                "temperature": 0.7, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/create_conversation_v2.txt"
@@ -1648,7 +1648,7 @@ def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None
     return prompt_input
   
   def __func_clean_up(gpt_response, prompt=""):
-    ret = "關於" + gpt_response.strip()
+    ret = "关于" + gpt_response.strip()
     return ret
 
   def __func_validate(gpt_response, prompt=""): 
@@ -1659,12 +1659,12 @@ def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None
       return False 
 
   def get_fail_safe(): 
-    return "與室友談論早晨的問候語"
+    return "与室友谈论早晨的问候语"
 
 
   # ChatGPT Plugin ===========================================================
   def __chat_func_clean_up(gpt_response, prompt=""): ############
-    ret = "關於" + gpt_response.strip()
+    ret = "关于" + gpt_response.strip()
     return ret
 
   def __chat_func_validate(gpt_response, prompt=""): ############
@@ -1676,14 +1676,14 @@ def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None
 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 11") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/summarize_conversation_v1.txt" ########
   prompt_input = create_prompt_input(conversation, test_input)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
-  example_output = "討論午餐要吃什麼" ########
-  special_instruction = '輸出必須通過填入<fill in>標籤來繼續上述句子。不要以"這是關於……的對話"開始，只需完成句子，但不要漏掉任何重要的細節（包括誰在聊天）。' ########
+  example_output = "讨论午餐要吃什么" ########
+  special_instruction = '输出必须通过填入<fill in>标签来继续上述句子。不要以"这是关于……的对话"开始，只需完成句子，但不要漏掉任何重要的细节（包括谁在聊天）。' ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -1692,7 +1692,7 @@ def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None
   # ChatGPT Plugin ===========================================================
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/summarize_conversation_v1.txt"
@@ -1722,7 +1722,7 @@ def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbo
   def __func_clean_up(gpt_response, prompt=""):
     print ("???")
     print (gpt_response)
-    gpt_response = gpt_response.strip().split("情感關鍵詞：")
+    gpt_response = gpt_response.strip().split("情感关键词：")
     factual = [i.strip() for i in gpt_response[0].split(",")]
     emotive = [i.strip() for i in gpt_response[1].split(",")]
     all_keywords = factual + emotive
@@ -1746,7 +1746,7 @@ def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbo
   def get_fail_safe(): 
     return []
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/get_keywords_v1.txt"
@@ -1791,7 +1791,7 @@ def run_gpt_prompt_keyword_to_thoughts(persona, keyword, concept_summary, test_i
   def get_fail_safe(): 
     return ""
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 40, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 40, 
                "temperature": 0.7, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/keyword_to_thoughts_v1.txt"
@@ -1846,7 +1846,7 @@ def run_gpt_prompt_convo_to_thoughts(persona,
   def get_fail_safe(): 
     return ""
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 40, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 40, 
                "temperature": 0.7, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/convo_to_thoughts_v1.txt"
@@ -1929,14 +1929,14 @@ def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, 
       return False 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 7") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/poignancy_event_v1.txt" ########
   prompt_input = create_prompt_input(persona, event_description)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
   example_output = "5" ########
-  special_instruction = "輸出應僅包含範圍在1至10之間的一個整數值。" ########
+  special_instruction = "输出应仅包含范围在1至10之间的一个整数值。" ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -1947,7 +1947,7 @@ def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, 
 
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 3, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 3, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/poignancy_event_v1.txt"
@@ -2000,14 +2000,14 @@ def run_gpt_prompt_thought_poignancy(persona, event_description, test_input=None
       return False 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 8") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/poignancy_thought_v1.txt" ########
   prompt_input = create_prompt_input(persona, event_description)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
   example_output = "5" ########
-  special_instruction = "輸出應僅包含範圍在1至10之間的一個整數值。" ########
+  special_instruction = "输出应仅包含范围在1至10之间的一个整数值。" ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2017,7 +2017,7 @@ def run_gpt_prompt_thought_poignancy(persona, event_description, test_input=None
 
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 3, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 3, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/poignancy_thought_v1.txt"
@@ -2072,14 +2072,14 @@ def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, v
       return False 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 9") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/poignancy_chat_v1.txt" ########
   prompt_input = create_prompt_input(persona, event_description)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
   example_output = "5" ########
-  special_instruction = "輸出應僅包含範圍在1至10之間的一個整數值。" ########
+  special_instruction = "输出应仅包含范围在1至10之间的一个整数值。" ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2090,7 +2090,7 @@ def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, v
 
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 3, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 3, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/poignancy_chat_v1.txt"
@@ -2131,7 +2131,7 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
       return False 
 
   def get_fail_safe(n): 
-    return ["我是誰"] * n
+    return ["我是谁"] * n
 
 
   # ChatGPT Plugin ===========================================================
@@ -2148,14 +2148,14 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 12") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/generate_focal_pt_v1.txt" ########
   prompt_input = create_prompt_input(persona, statements, n)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
-  example_output = '["Jane應該吃什麼午餐", "Jane喜歡草莓嗎", "Jane是誰"]' ########
-  special_instruction = "輸出必須是字符串的列表。" ########
+  example_output = '["Jane应该吃什么午餐", "Jane喜欢草莓吗", "Jane是谁"]' ########
+  special_instruction = "输出必须是字符串的列表。" ########
   fail_safe = get_fail_safe(n) ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2168,7 +2168,7 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
 
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 150, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 150, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/generate_focal_pt_v1.txt"
@@ -2199,8 +2199,8 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
     ret = dict()
     for i in gpt_response.split("\n"): 
       row = i.split(". ")[-1]
-      thought = row.split("（由於")[0].strip()
-      evi_raw = row.split("（由於")[1].split(")")[0].strip()
+      thought = row.split("（由于")[0].strip()
+      evi_raw = row.split("（由于")[1].split(")")[0].strip()
       evi_raw = re.findall(r'\d+', evi_raw)
       evi_raw = [int(i.strip()) for i in evi_raw]
       ret[thought] = evi_raw
@@ -2214,12 +2214,12 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
       return False 
 
   def get_fail_safe(n): 
-    return ["我餓了"] * n
+    return ["我饿了"] * n
 
 
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 150, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 150, 
                "temperature": 0.5, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/insight_and_evidence_v1.txt"
@@ -2275,14 +2275,14 @@ def run_gpt_prompt_agent_chat_summarize_ideas(persona, target_persona, statement
       return False 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 17") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/summarize_chat_ideas_v1.txt" ########
   prompt_input = create_prompt_input(persona, target_persona, statements, curr_context)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
-  example_output = 'Jane Doe在進行一個項目' ########
-  special_instruction = '輸出應該是一個能夠回應問題的字符串。' ########
+  example_output = 'Jane Doe在进行一个项目' ########
+  special_instruction = '输出应该是一个能够回应问题的字符串。' ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2292,7 +2292,7 @@ def run_gpt_prompt_agent_chat_summarize_ideas(persona, target_persona, statement
 
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 150, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 150, 
   #              "temperature": 0.5, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/summarize_chat_ideas_v1.txt"
@@ -2343,14 +2343,14 @@ def run_gpt_prompt_agent_chat_summarize_relationship(persona, target_persona, st
       return False 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 18") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/summarize_chat_relationship_v2.txt" ########
   prompt_input = create_prompt_input(persona, target_persona, statements)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
-  example_output = 'Jane Doe在進行一個項目' ########
-  special_instruction = '輸出應該是一個能夠回應問題的字符串。' ########
+  example_output = 'Jane Doe在进行一个项目' ########
+  special_instruction = '输出应该是一个能够回应问题的字符串。' ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2359,7 +2359,7 @@ def run_gpt_prompt_agent_chat_summarize_relationship(persona, target_persona, st
   # ChatGPT Plugin ===========================================================
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 150, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 150, 
   #              "temperature": 0.5, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/summarize_chat_relationship_v1.txt"
@@ -2471,14 +2471,14 @@ def run_gpt_prompt_agent_chat(maze, persona, target_persona,
 
 
   # print ("HERE JULY 23 -- ----- ") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/agent_chat_v1.txt" ########
   prompt_input = create_prompt_input(persona, target_persona, curr_context, init_summ_idea, target_summ_idea)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
   example_output = '[["Jane Doe", "你好！"], ["John Doe", "你好！"] ... ]' ########
-  special_instruction = '輸出應該是一個列表的列表，其中內部列表的格式應為 ["<Name>", "<Utterance>"]。' ########
+  special_instruction = '输出应该是一个列表的列表，其中内部列表的格式应为 ["<Name>", "<Utterance>"]。' ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2492,7 +2492,7 @@ def run_gpt_prompt_agent_chat(maze, persona, target_persona,
 
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 2000, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 2000, 
   #              "temperature": 0.7, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/agent_chat_v1.txt"
@@ -2552,14 +2552,14 @@ def run_gpt_prompt_summarize_ideas(persona, statements, question, test_input=Non
       return False 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 16") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/summarize_ideas_v1.txt" ########
   prompt_input = create_prompt_input(persona, statements, question)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
-  example_output = 'Jane Doe在進行一個項目' ########
-  special_instruction = '輸出應該是一個能夠回應問題的字符串。' ########
+  example_output = 'Jane Doe在进行一个项目' ########
+  special_instruction = '输出应该是一个能够回应问题的字符串。' ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2568,7 +2568,7 @@ def run_gpt_prompt_summarize_ideas(persona, statements, question, test_input=Non
   # ChatGPT Plugin ===========================================================
 
 
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 150, 
+  # gpt_param = {"engine": "text-davinci-003", "max_tokens": 150, 
   #              "temperature": 0.5, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v2/summarize_ideas_v1.txt"
@@ -2626,7 +2626,7 @@ def run_gpt_prompt_generate_next_convo_line(persona, interlocutor_desc, prev_con
   #     return False 
 
   # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 15") ########
-  # gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  # gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
   #              "temperature": 0, "top_p": 1, "stream": False,
   #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   # prompt_template = "persona/prompt_template/v3_ChatGPT/generate_next_convo_line_v1.txt" ########
@@ -2643,7 +2643,7 @@ def run_gpt_prompt_generate_next_convo_line(persona, interlocutor_desc, prev_con
 
 
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 250, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 250, 
                "temperature": 1, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/generate_next_convo_line_v1.txt"
@@ -2683,7 +2683,7 @@ def run_gpt_prompt_generate_whisper_inner_thought(persona, whisper, test_input=N
   def get_fail_safe(): 
     return "..."
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/whisper_inner_thought_v1.txt"
@@ -2720,7 +2720,7 @@ def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, 
   def get_fail_safe(): 
     return "..."
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/planning_thought_on_convo_v1.txt"
@@ -2771,14 +2771,14 @@ def run_gpt_prompt_memo_on_convo(persona, all_utt, test_input=None, verbose=Fals
 
 
   print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 15") ########
-  gpt_param = {"engine": "grok-beta", "max_tokens": 15, 
+  gpt_param = {"engine": "text-davinci-002", "max_tokens": 15, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v3_ChatGPT_zh/memo_on_convo_v1.txt" ########
   prompt_input = create_prompt_input(persona, all_utt)  ########
   prompt = generate_prompt(prompt_input, prompt_template)
-  example_output = '和Jane Doe交談很有趣。' ########
-  special_instruction = '輸出內容應僅包含代理可能注意到的任何有趣情況的總結字符串' ########
+  example_output = '和Jane Doe交谈很有趣。' ########
+  special_instruction = '输出内容应仅包含代理可能注意到的任何有趣情况的总结字符串' ########
   fail_safe = get_fail_safe() ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
@@ -2786,7 +2786,7 @@ def run_gpt_prompt_memo_on_convo(persona, all_utt, test_input=None, verbose=Fals
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
   # ChatGPT Plugin ===========================================================
 
-  gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   prompt_template = "persona/prompt_template/v2_zh/memo_on_convo_v1.txt"
@@ -2840,7 +2840,7 @@ def run_gpt_generate_safety_score(persona, comment, test_input=None, verbose=Fal
                         __chat_func_validate, __chat_func_clean_up, verbose)
   print (output)
   
-  gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2876,7 +2876,7 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
       for i in persona.a_mem.seq_chat: 
         if i.object == target_persona.scratch.name: 
           v1 = int((persona.scratch.curr_time - i.created).total_seconds()/60)
-          prev_convo_insert += f'{str(v1)}分鐘前，{persona.scratch.name}和{target_persona.scratch.name}已經在{i.description}。這個上下文發生在那次對話之後。'
+          prev_convo_insert += f'{str(v1)}分钟前，{persona.scratch.name}和{target_persona.scratch.name}已经在{i.description}。这个上下文发生在那次对话之后。'
           break
     if prev_convo_insert == "\n": 
       prev_convo_insert = ""
@@ -2899,9 +2899,9 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
     for i in curr_chat:
       convo_str += ": ".join(i) + "\n"
     if convo_str == "": 
-      convo_str = "[對話還沒有開始 -- 開始吧!]"
+      convo_str = "[对话还没有开始 -- 开始吧!]"
 
-    init_iss = f"這裡是對{init_persona.scratch.name}的簡短描述。\n{init_persona.scratch.get_str_iss()}"
+    init_iss = f"这里是对{init_persona.scratch.name}的简短描述。\n{init_persona.scratch.get_str_iss()}"
     prompt_input = [init_iss, init_persona.scratch.name, retrieved_str, prev_convo_insert,
       curr_location, curr_context, init_persona.scratch.name, target_persona.scratch.name,
       convo_str, init_persona.scratch.name, target_persona.scratch.name,
@@ -2955,7 +2955,7 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
                         __chat_func_validate, __chat_func_clean_up, verbose)
   print (output)
   
-  gpt_param = {"engine": "grok-beta", "max_tokens": 50, 
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
