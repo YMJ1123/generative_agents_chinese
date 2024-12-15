@@ -13,7 +13,7 @@ from persona.prompt_template.gpt_structure import *
 from persona.prompt_template.run_gpt_zh_prompt import *
 
 def generate_poig_score(persona, event_type, description): 
-  if "空闲" in description: 
+  if "空閒" in description: 
     return 1
 
   if event_type == "event": 
@@ -113,8 +113,8 @@ def perceive(persona, maze):
     if not p: 
       # If the object is not present, then we default the event to "idle".
       p = "在"
-      o = "空闲"
-      desc = "空闲"
+      o = "空閒"
+      desc = "空閒"
     desc = f"{s.split(':')[-1]}在{desc}"
     p_event = (s, p, o)
 
@@ -154,7 +154,7 @@ def perceive(persona, maze):
       # If we observe the persona's self chat, we include that in the memory
       # of the persona here. 
       chat_node_ids = []
-      if p_event[0] == f"{persona.name}" and p_event[1] == "对话": 
+      if p_event[0] == f"{persona.name}" and p_event[1] == "對話": 
         curr_event = persona.scratch.act_event
         if persona.scratch.act_description in persona.a_mem.embeddings: 
           chat_embedding = persona.a_mem.embeddings[

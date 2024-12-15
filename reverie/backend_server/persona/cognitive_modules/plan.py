@@ -102,7 +102,7 @@ def generate_hourly_schedule(persona, wake_up_hour):
       n_m1_activity = []
       for count, curr_hour_str in enumerate(hour_str): 
         if wake_up_hour > 0: 
-          n_m1_activity += ["睡觉"]
+          n_m1_activity += ["睡覺"]
           wake_up_hour -= 1
         else: 
           n_m1_activity += [run_gpt_prompt_generate_hourly_schedule(
@@ -171,7 +171,7 @@ def generate_action_sector(act_desp, persona, maze):
   Persona state: identity stable set, n-1 day schedule, daily plan
 
   INPUT: 
-    act_desp: description of the new action (e.g., "睡觉")
+    act_desp: description of the new action (e.g., "睡覺")
     persona: The Persona class instance 
   OUTPUT: 
     action_arena (e.g., "bedroom 2")
@@ -189,7 +189,7 @@ def generate_action_arena(act_desp, persona, maze, act_world, act_sector):
   Persona state: identity stable set, n-1 day schedule, daily plan
 
   INPUT: 
-    act_desp: description of the new action (e.g., "睡觉")
+    act_desp: description of the new action (e.g., "睡覺")
     persona: The Persona class instance 
   OUTPUT: 
     action_arena (e.g., "bedroom 2")
@@ -208,7 +208,7 @@ def generate_action_game_object(act_desp, act_address, persona, maze):
   Persona state: identity stable set, n-1 day schedule, daily plan
 
   INPUT: 
-    act_desp: the description of the action (e.g., "睡觉")
+    act_desp: the description of the action (e.g., "睡覺")
     act_address: the arena where the action will take place: 
                (e.g., "dolores double studio:double studio:bedroom 2")
     persona: The Persona class instance 
@@ -231,7 +231,7 @@ def generate_action_pronunciatio(act_desp, persona):
   Does not really need any information from persona. 
 
   INPUT: 
-    act_desp: the description of the action (e.g., "睡觉")
+    act_desp: the description of the action (e.g., "睡覺")
     persona: The Persona class instance
   OUTPUT: 
     a string of emoji that translates action description.
@@ -253,7 +253,7 @@ def generate_action_event_triple(act_desp, persona):
   """TODO 
 
   INPUT: 
-    act_desp: the description of the action (e.g., "睡觉")
+    act_desp: the description of the action (e.g., "睡覺")
     persona: The Persona class instance
   OUTPUT: 
     a string of emoji that translates action description.
@@ -379,7 +379,7 @@ def generate_new_decomp_schedule(persona, inserted_act, inserted_act_dur,  start
   persona_name = persona.name 
   main_act_dur = main_act_dur
 
-  x = truncated_act_dur[-1][0].split("(")[0].strip() + " (准备" + truncated_act_dur[-1][0].split("(")[-1][:-1] + ")"
+  x = truncated_act_dur[-1][0].split("(")[0].strip() + " (準備" + truncated_act_dur[-1][0].split("(")[-1][:-1] + ")"
   truncated_act_dur[-1][0] = x 
 
   if "(" in truncated_act_dur[-1][0]: 
@@ -411,37 +411,37 @@ def generate_new_decomp_schedule(persona, inserted_act, inserted_act_dur,  start
 def revise_identity(persona): 
   p_name = persona.scratch.name
 
-  focal_points = [f"{p_name}在{persona.scratch.get_str_curr_date_str()}的计划。",
-                  f"{p_name}生活中的重要的最近的活动。"]
+  focal_points = [f"{p_name}在{persona.scratch.get_str_curr_date_str()}的計劃。",
+                  f"{p_name}生活中的重要的最近的活動。"]
   retrieved = new_retrieve(persona, focal_points)
 
-  statements = "[陈述]\n"
+  statements = "[陳述]\n"
   for key, val in retrieved.items():
     for i in val: 
       statements += f"{i.created.strftime('%A %B %d -- %H:%M %p')}: {i.embedding_key}\n"
 
   # print (";adjhfno;asdjao;idfjo;af", p_name)
   plan_prompt = statements + "\n"
-  plan_prompt += f"根据上述陈述，{p_name}在他们计划时有什么事情是应该记住的吗"
+  plan_prompt += f"根據上述陳述，{p_name}在他們計劃時有什麼事情是應該記住的嗎"
   plan_prompt += f" *{persona.scratch.curr_time.strftime('%A %B %d')}*? "
-  plan_prompt += f"如果有任何的调度信息，请尽可能具体（ 如果在声明中有提到日期，时间和位置，则包含在内 )\n\n"
-  plan_prompt += f"从{p_name}的角度写回应。"
+  plan_prompt += f"如果有任何的調度信息，請儘可能具體（ 如果在聲明中有提到日期，時間和位置，則包含在內 )\n\n"
+  plan_prompt += f"從{p_name}的角度寫回應。"
   plan_note = ChatGPT_single_request(plan_prompt)
   # print (plan_note)
 
   thought_prompt = statements + "\n"
-  thought_prompt += f"根据上述陈述，我们如何总结{p_name}对他们过去的日子的感受？\n\n"
-  thought_prompt += f"从{p_name}的角度写回复。"
+  thought_prompt += f"根據上述陳述，我們如何總結{p_name}對他們過去的日子的感受？\n\n"
+  thought_prompt += f"從{p_name}的角度寫回復。"
   thought_note = ChatGPT_single_request(thought_prompt)
   # print (thought_note)
 
-  currently_prompt = f"{p_name}从{(persona.scratch.curr_time - datetime.timedelta(days=1)).strftime('%A %B %d')}的状态:\n"
+  currently_prompt = f"{p_name}從{(persona.scratch.curr_time - datetime.timedelta(days=1)).strftime('%A %B %d')}的狀態:\n"
   currently_prompt += f"{persona.scratch.currently}\n\n"
-  currently_prompt += f"{p_name}在{(persona.scratch.curr_time - datetime.timedelta(days=1)).strftime('%A %B %d')}结束时的想法：\n" 
+  currently_prompt += f"{p_name}在{(persona.scratch.curr_time - datetime.timedelta(days=1)).strftime('%A %B %d')}結束時的想法：\n" 
   currently_prompt += (plan_note + thought_note).replace('\n', '') + "\n\n"
-  currently_prompt += f"现在是{persona.scratch.curr_time.strftime('%A %B %d')}。基于以上信息，写出{p_name}在{(persona.scratch.curr_time - datetime.timedelta(days=1)).strftime('%A %B %d')}结束时的状态，反映出{p_name}的思考。以第三人称谈论{p_name}。"
-  currently_prompt += f"如果有任何日程安排信息，请尽可能具体（如果在陈述中有提到，包括日期、时间和地点）。\n\n"
-  currently_prompt += "按照下面的格式：\n状态: <new status>"
+  currently_prompt += f"現在是{persona.scratch.curr_time.strftime('%A %B %d')}。基於以上信息，寫出{p_name}在{(persona.scratch.curr_time - datetime.timedelta(days=1)).strftime('%A %B %d')}結束時的狀態，反映出{p_name}的思考。以第三人稱談論{p_name}。"
+  currently_prompt += f"如果有任何日程安排信息，請儘可能具體（如果在陳述中有提到，包括日期、時間和地點）。\n\n"
+  currently_prompt += "按照下面的格式：\n狀態: <new status>"
   # print ("DEBUG ;adjhfno;asdjao;asdfsidfjo;af", p_name)
   # print (currently_prompt)
   new_currently = ChatGPT_single_request(currently_prompt)
@@ -451,9 +451,9 @@ def revise_identity(persona):
   persona.scratch.currently = new_currently
 
   daily_req_prompt = persona.scratch.get_str_iss() + "\n"
-  daily_req_prompt += f"今天是{persona.scratch.curr_time.strftime('%A %B %d')}。这是{persona.scratch.name}今天的大致计划（包括一天中的时间，例如：12.00 pm吃午饭，7 to 8 pm看电视）。\n\n"
-  daily_req_prompt += f"请按照这个格式（列表应该包含4~6个项目，但不要超过）:\n"
-  daily_req_prompt += f"1. 在<time>醒来并完成早晨的日常任务，2. ..."
+  daily_req_prompt += f"今天是{persona.scratch.curr_time.strftime('%A %B %d')}。這是{persona.scratch.name}今天的大致計劃（包括一天中的時間，例如：12.00 pm吃午飯，7 to 8 pm看電視）。\n\n"
+  daily_req_prompt += f"請按照這個格式（列表應該包含4~6個項目，但不要超過）:\n"
+  daily_req_prompt += f"1. 在<time>醒來並完成早晨的日常任務，2. ..."
 
   new_daily_req = ChatGPT_single_request(daily_req_prompt)
   new_daily_req = new_daily_req.replace('\n', ' ')
@@ -501,7 +501,7 @@ def _long_term_planning(persona, new_day):
 
 
   # Added March 4 -- adding plan to the memory.
-  thought = f"这是{persona.scratch.name}在{persona.scratch.curr_time.strftime('%A %B %d')}的计划："
+  thought = f"這是{persona.scratch.name}在{persona.scratch.curr_time.strftime('%A %B %d')}的計劃："
   for i in persona.scratch.daily_req: 
     thought += f" {i},"
   thought = thought[:-1] + "."
@@ -540,16 +540,16 @@ def _determine_action(persona, maze):
     do not want to decompose it, so that's what we catch here. 
 
     INPUT: 
-      act_desp: the description of the action (e.g., "睡觉")
+      act_desp: the description of the action (e.g., "睡覺")
       act_dura: the duration of the action in minutes. 
     OUTPUT: 
       a boolean. True if we need to decompose, False otherwise. 
     """
     # print('!!!!determine_decomp!!!!')
     # print(act_desp, act_dura)
-    if "睡觉" not in act_desp and "床" not in act_desp: 
+    if "睡覺" not in act_desp and "床" not in act_desp: 
       return True
-    elif "睡觉" in act_desp or "asleep" in act_desp or "in bed" in act_desp:
+    elif "睡覺" in act_desp or "asleep" in act_desp or "in bed" in act_desp:
       return False
     elif "sleep" in act_desp or "床" in act_desp: 
       if act_dura > 60: 
@@ -617,7 +617,7 @@ def _determine_action(persona, maze):
 
   if 1440 - x_emergency > 0: 
     print ("x_emergency__AAA", x_emergency)
-  persona.scratch.f_daily_schedule += [["睡觉", 1440 - x_emergency]]
+  persona.scratch.f_daily_schedule += [["睡覺", 1440 - x_emergency]]
   
 
 
@@ -696,7 +696,7 @@ def _choose_retrieved(persona, retrieved):
   # Skip idle. 
   for event_desc, rel_ctx in retrieved.items(): 
     curr_event = rel_ctx["curr_event"]
-    if "空闲" not in event_desc: 
+    if "空閒" not in event_desc: 
       priority += [rel_ctx]
   if priority: 
     return random.choice(priority)
@@ -726,8 +726,8 @@ def _should_react(persona, retrieved, personas):
         or not init_persona.scratch.act_description): 
       return False
 
-    if ("睡觉" in target_persona.scratch.act_description 
-        or "睡觉" in init_persona.scratch.act_description): 
+    if ("睡覺" in target_persona.scratch.act_description 
+        or "睡覺" in init_persona.scratch.act_description): 
       return False
 
     if init_persona.scratch.curr_time.hour == 23: 
@@ -757,8 +757,8 @@ def _should_react(persona, retrieved, personas):
         or not init_persona.scratch.act_description): 
       return False
 
-    if ("睡觉" in target_persona.scratch.act_description 
-        or "睡觉" in init_persona.scratch.act_description): 
+    if ("睡覺" in target_persona.scratch.act_description 
+        or "睡覺" in init_persona.scratch.act_description): 
       return False
 
     # return False
@@ -803,7 +803,7 @@ def _should_react(persona, retrieved, personas):
   if ":" not in curr_event.subject: 
     # this is a persona event. 
     if lets_talk(persona, personas[curr_event.subject], retrieved):
-      return f"对话{curr_event.subject}"
+      return f"對話{curr_event.subject}"
     react_mode = lets_react(persona, personas[curr_event.subject], 
                             retrieved)
     return react_mode
@@ -889,13 +889,13 @@ def _chat_react(maze, persona, focused_event, reaction_mode, personas):
   for role, p in [("init", init_persona), ("target", target_persona)]: 
     if role == "init": 
       act_address = f"<persona> {target_persona.name}"
-      act_event = (p.name, "对话", target_persona.name)
+      act_event = (p.name, "對話", target_persona.name)
       chatting_with = target_persona.name
       chatting_with_buffer = {}
       chatting_with_buffer[target_persona.name] = 800
     elif role == "target": 
       act_address = f"<persona> {init_persona.name}"
-      act_event = (p.name, "对话", init_persona.name)
+      act_event = (p.name, "對話", init_persona.name)
       chatting_with = init_persona.name
       chatting_with_buffer = {}
       chatting_with_buffer[init_persona.name] = 800
@@ -914,12 +914,12 @@ def _chat_react(maze, persona, focused_event, reaction_mode, personas):
 def _wait_react(persona, reaction_mode): 
   p = persona
 
-  inserted_act = f'等待开始{p.scratch.act_description.split("(")[-1][:-1]}'
+  inserted_act = f'等待開始{p.scratch.act_description.split("(")[-1][:-1]}'
   end_time = datetime.datetime.strptime(reaction_mode[4:].strip(), "%B %d, %Y, %H:%M:%S")
   inserted_act_dur = (end_time.minute + end_time.hour * 60) - (p.scratch.curr_time.minute + p.scratch.curr_time.hour * 60) + 1
 
   act_address = f"<waiting> {p.scratch.curr_tile[0]} {p.scratch.curr_tile[1]}"
-  act_event = (p.name, "等待开始", p.scratch.act_description.split("(")[-1][:-1])
+  act_event = (p.name, "等待開始", p.scratch.act_description.split("(")[-1][:-1])
   chatting_with = None
   chat = None
   chatting_with_buffer = None
@@ -992,7 +992,7 @@ def plan(persona, maze, personas, new_day, retrieved):
     reaction_mode = _should_react(persona, focused_event, personas)
     if reaction_mode: 
       # If we do want to chat, then we generate conversation 
-      if reaction_mode[:2] == "对话":
+      if reaction_mode[:2] == "對話":
         _chat_react(maze, persona, focused_event, reaction_mode, personas)
       elif reaction_mode[:2] == "等待": 
         _wait_react(persona, reaction_mode)
@@ -1002,7 +1002,7 @@ def plan(persona, maze, personas, new_day, retrieved):
   # Step 3: Chat-related state clean up. 
   # If the persona is not chatting with anyone, we clean up any of the 
   # chat-related states here. 
-  if persona.scratch.act_event[1] != "对话":
+  if persona.scratch.act_event[1] != "對話":
     persona.scratch.chatting_with = None
     persona.scratch.chat = None
     persona.scratch.chatting_end_time = None
