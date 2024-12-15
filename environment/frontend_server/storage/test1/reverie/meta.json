@@ -1,0 +1,25 @@
+{
+  "fork_sim_code": "queen_ckpt1_n15",
+  "start_date": "August 01, 1723",
+  "curr_time": "August 01, 1723, 00:00:00",
+  "sec_per_step": 300,
+  "maze_name": "the_palace",
+  "persona_names": [
+    "\u592a\u540e",
+    "\u66f9\u7434\u9ed8",
+    "\u980c\u829d",
+    "\u5e74\u4e16\u862d",
+    "\u8607\u57f9\u76db",
+    "\u7687\u5e1d",
+    "\u6eab\u5be6\u521d",
+    "\u679c\u90e1\u738b",
+    "\u7687\u540e",
+    "\u5b89\u9675\u5bb9",
+    "\u5d14\u69ff\u6c50",
+    "\u6c88\u7709\u838a",
+    "\u6d41\u6731",
+    "\u6d63\u78a7",
+    "\u7504\u5b1b"
+  ],
+  "step": 0
+}
