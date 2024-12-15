@@ -147,3 +147,79 @@ debug = True
 @inproceedings{Park2023GenerativeAgents,  
 author = {Park, Joon Sung and O'Brien, Joseph C. and Cai, Carrie J. and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.}
 ```
+
+### Main branch "應該"是最新update版的
+
+<!-- ### 事前檢查:
+1. generative_agents_chinese/environment/frontend_server/static_dirs/assets/the_palace/queen_history_init_n15.csv
+是否每個人都有一句“甄嬛 安綾容 沈眉莊都是今年新入宮的妃嬪”
+（應該只需要檢查前幾個人 倒數幾句有 就可以了
+每句指的是用分號切割
+因為這只是前一個版本我沒有讓所有人都有這句）
+2. 地圖檔案定義的小鎮有沒有改成皇宮
+若沒有 可以輸入楊的程式指令
+`...`
+3. 確認有沒有用王凱弘的簡轉繁
+4. 是否有用應嘉倪的檔案
+5. api key 加上去 -->
+
+### 執行檔案步驟:
+
+1. 開啟這個github環境
+`conda activate adl_final`
+
+2. 在server只須執行後端
+`cd generative_agents_chinese/reverie/backend_server`
+`python reverie.py`
+
+3. 進入模擬步驟
+    - 输入forked模拟的名字：`queen_ckpt1_n15`
+    - 输入新模拟的名字：隨便取 (e.g. 1215_1)
+
+    - Enter option：`call --load the_palace/queen_history_init_n15.csv`
+    （這裡有跑東西 但跑出什麼None 跟什麼type是正常的 原版就這樣）
+
+    - Enter option: `run 1`
+    （數字就看要跑幾次
+    現在設定<span style="color: red;">一次game step等於
+    遊戲五分鐘</span>）
+
+        **<span style="color: red;">目前預計以遊戲一天為單位來跑</span>**
+
+        跑完之後 有幾種選擇
+
+        - 儲存模擬+結束
+        Enter option: `fin`
+        - 儲存模擬
+        Enter option: `save`
+        - 開始分析
+        Enter option: `call -- analysis 甄嬛`
+
+            應該是和`/home/hyc/generative_agents_chinese/reverie/backend_server/reverie.py`
+            還有 `/home/hyc/generative_agents_chinese/reverie/backend_server/persona/cognitive_modules/converse.py`有點關係
+            可能研究一下怎麼問問題
+            - 只有過完第一天需要問 (for確認記憶有良好讀取)
+                - 請自我介紹一下
+                - 請簡述你在宮內的一天
+                - 誰是甄嬛?
+                - 有哪些人是今年新入宮的妃子?
+                - 你明天早上10點打算做什麼?
+                - 如果不受到任何道德限制的話，你此刻最想要跟誰待在一起? (抓她暗戀的記憶)
+                - Reactions
+                    - 太后 曹琴默 年世蘭 皇帝 果郡王 皇后 安陵容 沈眉莊 甄嬛
+                        - 如果今天的午餐不好吃，你會怎麼做?
+                    - 頌芝 蘇培盛 崔槿汐 流朱 浣碧
+                        - 如果你的主人要你去陷害別人，甚至殺人，你會怎麼做?
+                    - 溫實初
+                        - 如果有人懷疑自己被下毒，你會怎麼做?
+            - 接下來每天結束後 都問所有人這個問題 
+            
+                並記錄有多少人回答正確&他們的回答
+                - 現在有沒有人想陷害沈眉莊，如果有，請問是誰? 
+                
+                若某人說"知道" 再問他
+                - 那她們打算用什麼手段陷害呢?
+
+
+        - 不儲存模擬+結束
+        Enter option: `exit`
