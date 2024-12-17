@@ -358,7 +358,7 @@ def run_gpt_prompt_task_decomp(persona,
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
-    print ("TOODOOOOOO")
+    print ("TOODOOOOOO __func_clean_up edit by ying")
     print (gpt_response)
     print ("-==- -==- -==- ")
 
@@ -378,16 +378,21 @@ def run_gpt_prompt_task_decomp(persona,
         k = [j.strip() for j in i.split("（持续时间，分钟：")]
       elif "（持续时间，分钟" in i:
         k = [j.strip() for j in i.split("（持续时间，分钟")]
+      elif "（持续时间：" in i:
+        k = [j.strip() for j in i.split("（持续时间：")]
       elif "(持续时间，分钟：" in i:
         k = [j.strip() for j in i.split("(持续时间，分钟：")]
-      elif "(持续时间，分钟:" in i:
-        k = [j.strip() for j in i.split("(持续时间，分钟:")]
-      elif "(持续时间，分钟" in i:
-        k = [j.strip() for j in i.split("(持续时间，分钟")]
-      elif "(持续时间, 分钟" in i:
-        k = [j.strip() for j in i.split("(持续时间, 分钟")]
-      print(i)
-      print(k)
+      elif "(持續時間，分鐘：" in i:
+        k = [j.strip() for j in i.split("(持续时间，分钟：")]
+      elif "(持续时间：" in i:
+        k = [j.strip() for j in i.split("(持续时间：")]
+      elif "（" in i:
+        k = [j.strip() for j in i.split("（")]
+      else: 
+        print("__func_clean_up ---- else")
+        return 0
+      print("i: ",i)
+      print("k: ",k)
       if len(k) < 2:
         continue
       task = k[0]

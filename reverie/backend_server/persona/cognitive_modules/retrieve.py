@@ -225,10 +225,11 @@ def new_retrieve(persona, focal_points, n_count=30):
               for i in persona.a_mem.seq_event + persona.a_mem.seq_thought
               if "空閒" not in i.embedding_key]
     nodes = sorted(nodes, key=lambda x: x[0])
-    nodes = [i for created, i in nodes]
-
+    nodes = [i for created, i in nodes] 
+    print ("nodes: ",nodes)
     # Calculating the component dictionaries and normalizing them.
     recency_out = extract_recency(persona, nodes)
+    print ("recency_out: ",recency_out)
     recency_out = normalize_dict_floats(recency_out, 0, 1)
     importance_out = extract_importance(persona, nodes)
     importance_out = normalize_dict_floats(importance_out, 0, 1)  
