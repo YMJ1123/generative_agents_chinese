@@ -5,7 +5,11 @@ os.environ["http_proxy"] = proxy
 os.environ["https_proxy"] = proxy
 
 # Copy and paste your OpenAI API Key
+<<<<<<< HEAD
 openai_api_key = "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"
+=======
+openai_api_key = ""
+>>>>>>> 767ac82a (1219)
 # Put your name
 key_owner = "ymj"
 
