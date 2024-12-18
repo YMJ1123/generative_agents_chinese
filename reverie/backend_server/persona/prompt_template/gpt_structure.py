@@ -132,8 +132,8 @@ def ChatGPT_safe_generate_response(prompt,
                                    ): 
   # prompt = 'GPT-3 Prompt:\n"""\n' + prompt + '\n"""\n'
   prompt = '"""\n' + prompt + '\n"""\n'
-  prompt += f"将上述提示的响应输出为json格式。{special_instruction}\n"
-  prompt += "示例输出json:\n"
+  prompt += f"將上述提示的響應輸出為json格式。{special_instruction}\n"
+  prompt += "示例輸出json:\n"
   prompt += '{"output": "' + str(example_output) + '"}'
 
   if verbose: 
@@ -280,7 +280,7 @@ def safe_generate_response(prompt,
 def get_embedding(text, model="text-embedding-ada-002"):
   text = text.replace("\n", " ")
   if not text: 
-    text = "这是空白的"
+    text = "這是空白的"
   return openai.Embedding.create(
           input=[text], model=model)['data'][0]['embedding']
 

@@ -1,0 +1,142 @@
+{
+  "persona": {
+    "\u592a\u540e": {
+      "movement": [
+        22,
+        65
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u58fd\u5eb7\u5bae:\u4e3b\u623f\u9593:\u56db\u8173\u66f8\u6848",
+      "chat": null
+    },
+    "\u66f9\u7434\u9ed8": {
+      "movement": [
+        93,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u7fca\u5764\u5bae:\u66f9\u7434\u9ed8\u7684\u81e5\u5ba4:\u6728\u88fd\u6728\u88fd\u5e8a\u69bb\u69bb",
+      "chat": null
+    },
+    "\u980c\u829d": {
+      "movement": [
+        89,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u7fca\u5764\u5bae:\u516c\u5171\u4f11\u606f\u5ba4:\u516c\u5171\u9577\u684c",
+      "chat": null
+    },
+    "\u5e74\u4e16\u862d": {
+      "movement": [
+        89,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u7fca\u5764\u5bae:\u516c\u5171\u4f11\u606f\u5ba4:\u516c\u5171\u9577\u684c",
+      "chat": null
+    },
+    "\u8607\u57f9\u76db": {
+      "movement": [
+        58,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u990a\u5fc3\u6bbf:\u8607\u57f9\u76db\u7684\u623f\u9593:\u6728\u88fd\u6728\u88fd\u5e8a\u69bb\u69bb",
+      "chat": null
+    },
+    "\u7687\u5e1d": {
+      "movement": [
+        53,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u990a\u5fc3\u6bbf:\u516c\u5171\u4f11\u606f\u5ba4:\u516c\u5171\u9577\u684c",
+      "chat": null
+    },
+    "\u6eab\u5be6\u521d": {
+      "movement": [
+        93,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u592a\u91ab\u9662:\u4e3b\u623f\u9593:\u6728\u88fd\u6728\u88fd\u5e8a\u69bb\u69bb",
+      "chat": null
+    },
+    "\u679c\u90e1\u738b": {
+      "movement": [
+        87,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u679c\u90e1\u738b\u5e9c:\u4e3b\u623f\u9593:\u51b0\u9451",
+      "chat": null
+    },
+    "\u7687\u540e": {
+      "movement": [
+        73,
+        14
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u5bf6\u83ef\u6bbf:\u5496\u5561\u5e97:\u708a\u623f\u7076\u81fa",
+      "chat": null
+    },
+    "\u5b89\u9675\u5bb9": {
+      "movement": [
+        54,
+        14
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u5ef6\u79a7\u5bae:\u4e3b\u623f\u9593:\u8863\u7bb1",
+      "chat": null
+    },
+    "\u5d14\u69ff\u6c50": {
+      "movement": [
+        16,
+        31
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u788e\u7389\u8ed2:\u5d14\u69ff\u6c50\u7684\u623f\u9593:\u6728\u88fd\u8ca8\u67b6",
+      "chat": null
+    },
+    "\u6c88\u7709\u838a": {
+      "movement": [
+        26,
+        19
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u788e\u7389\u8ed2:\u6c88\u7709\u838a\u7684\u623f\u9593:\u756b\u6848",
+      "chat": null
+    },
+    "\u6d41\u6731": {
+      "movement": [
+        26,
+        32
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u788e\u7389\u8ed2:\u6d41\u6731\u7684\u623f\u9593:\u6728\u88fd\u6728\u88fd\u5e8a\u69bb\u69bb",
+      "chat": null
+    },
+    "\u6d63\u78a7": {
+      "movement": [
+        36,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u788e\u7389\u8ed2:\u6d63\u78a7\u7684\u623f\u9593:\u6728\u88fd\u6728\u88fd\u5e8a\u69bb\u69bb",
+      "chat": null
+    },
+    "\u7504\u5b1b": {
+      "movement": [
+        16,
+        19
+      ],
+      "pronunciatio": "\ud83d\ude34",
+      "description": "\u7761\u89ba @ \u5c0f\u93ae:\u788e\u7389\u8ed2:\u7504\u5b1b\u7684\u623f\u9593:\u56db\u8173\u66f8\u6848",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "August 01, 1723, 00:00:00"
+  }
+}

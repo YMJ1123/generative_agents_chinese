@@ -1,0 +1,177 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "August 01, 1723, 00:00:00",
+  "curr_tile": [
+    36,
+    18
+  ],
+  "daily_plan_req": "\u6d63\u78a7\u6bcf\u65e5\u56db\u6642\u8d77\uff0c\u5148\u70ba\u4e3b\u4eba\u6e96\u5099\u6d17\u6f31\u7528\u54c1\uff0c\u4e03\u6642\u7528\u81b3\u3002\u7528\u5b8c\u65e9\u81b3\u5f8c\u5230\u666f\u4ec1\u5bae\u5411\u7687\u540e\u8acb\u5b89\uff0c\u96a8\u5f8c\u6703\u5354\u52a9\u7504\u5b1b\u6574\u7406\u5167\u52d9\uff0c\u6216\u966a\u540c\u7504\u5b1b\u65bc\u82b1\u5712\u6563\u6b65\uff0c\u4ea6\u6216\u5728\u5bae\u4e2d\u4f5c\u70ba\u7504\u5b1b\u7684\u96a8\u4f8d\uff0c\u5354\u52a9\u5b89\u6392\u6bcf\u65e5\u4e8b\u52d9\u3002\u665a\u81b3\u6642\u9593\u4e03\u6642\uff0c\u96a8\u5f8c\u8207\u7504\u5b1b\u5171\u5ea6\u5b89\u975c\u6642\u5149\uff0c\u4e5d\u6642\u524d\u5c31\u5be2\u3002",
+  "name": "\u6d63\u78a7",
+  "first_name": "\u6d63\u78a7",
+  "last_name": "\u6d63\u78a7",
+  "age": 16,
+  "innate": "\u6a5f\u9748\uff0c\u654f\u611f\uff0c\u5c0d\u4e3b\u4eba\u5fe0\u8aa0\u3002",
+  "learned": "\u5728\u7504\u5b1b\u7684\u6559\u5c0e\u4e0b\uff0c\u6d63\u78a7\u5b78\u6703\u4e86\u66f4\u591a\u7684\u5bae\u4e2d\u79ae\u5100\u53ca\u4eba\u969b\u61c9\u5c0d\u4e4b\u6cd5\u3002",
+  "currently": "\u6d63\u78a7\u8eab\u70ba\u7504\u5b1b\u8eab\u908a\u7684\u8cbc\u8eab\u4f8d\u5973\uff0c\u5354\u52a9\u7504\u5b1b\u61c9\u5c0d\u5f8c\u5bae\u4e2d\u5c64\u51fa\u4e0d\u7aae\u7684\u56f0\u96e3\u3002",
+  "lifestyle": "\u6d63\u78a7\u56db\u6642\u8d77\u5e8a\uff0c\u4e03\u6642\u7528\u65e9\u81b3\uff0c\u4e03\u6642\u665a\u81b3\uff0c\u4e5d\u6642\u6b78\u5be2\u3002",
+  "living_area": "\u7687\u5bae:\u788e\u7389\u8ed2",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 246,
+  "importance_ele_n": 4,
+  "thought_count": 5,
+  "daily_req": [
+    "\u57288:00 am\u9192\u6765\u5e76\u5b8c\u6210\u65e9\u6668\u7684\u65e5\u5e38\u4efb\u52a1"
+  ],
+  "f_daily_schedule": [
+    [
+      "\u7761\u89ba",
+      480
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u6d17\u6f31\u7528\u54c1 (\u6d74\u5ba4\u6e96\u5099\u71b1\u6c34\u548c\u6bdb\u5dfe)",
+      10
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u6d17\u6f31\u7528\u54c1 (\u6d63\u78a7\u6574\u7406\u7504\u5b1b\u7684\u7259\u5177\u548c\u6d17\u81c9\u7528\u54c1)",
+      10
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u6d17\u6f31\u7528\u54c1 (\u6d63\u78a7\u6e96\u5099\u597d\u6e05\u6f54\u7528\u5177\u548c\u6d17\u9aee\u6db2)",
+      10
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u6d17\u6f31\u7528\u54c1 (\u6d63\u78a7\u512a\u5148\u70ba\u7504\u5b1b\u6e96\u5099\u8212\u9069\u7684\u6d74\u5dfe\u548c\u7761\u8863)",
+      10
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u6d17\u6f31\u7528\u54c1 (\u6d63\u78a7\u958b\u59cb\u70ba\u7504\u5b1b\u5012\u71b1\u6c34\uff0c\u5354\u52a9\u7504\u5b1b\u6c90\u6d74)",
+      20
+    ],
+    [
+      "\u666f\u4ec1\u5bab\u5411\u7687\u540e\u8bf7\u5b89",
+      60
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u5354\u52a9\u6574\u7406\u5167\u52d9",
+      120
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u7528\u9910",
+      120
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u5354\u52a9\u6574\u7406\u5167\u52d9",
+      180
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u70ba\u7504\u5b1b\u6e96\u5099\u665a\u81b3",
+      60
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u966a\u540c\u7504\u5b1b\u6563\u6b65\u65bc\u82b1\u5712",
+      60
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u8207\u7504\u5b1b\u5171\u5ea6\u5b89\u975c\u6642\u5149",
+      180
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u9032\u884c\u665a\u81b3\u5f8c\u6e96\u5099\u5c31\u5be2\uff0c\u4e5d\u6642\u524d\u5165\u7761",
+      120
+    ],
+    [
+      "\u7761\u89ba",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "\u7761\u89ba",
+      480
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u6d17\u6f31\u7528\u54c1",
+      60
+    ],
+    [
+      "\u666f\u4ec1\u5bab\u5411\u7687\u540e\u8bf7\u5b89",
+      60
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u5354\u52a9\u6574\u7406\u5167\u52d9",
+      120
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u7528\u9910",
+      120
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u5354\u52a9\u6574\u7406\u5167\u52d9",
+      180
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u70ba\u7504\u5b1b\u6e96\u5099\u665a\u81b3",
+      60
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u966a\u540c\u7504\u5b1b\u6563\u6b65\u65bc\u82b1\u5712",
+      60
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u8207\u7504\u5b1b\u5171\u5ea6\u5b89\u975c\u6642\u5149",
+      180
+    ],
+    [
+      "\u7504\u5b1b\u5e9c\u4e2d\u9032\u884c\u665a\u81b3\u5f8c\u6e96\u5099\u5c31\u5be2\uff0c\u4e5d\u6642\u524d\u5165\u7761",
+      120
+    ]
+  ],
+  "act_address": "\u5c0f\u93ae:\u788e\u7389\u8ed2:\u6d63\u78a7\u7684\u623f\u9593:\u56db\u8173\u66f8\u6848",
+  "act_start_time": "August 01, 1723, 00:00:00",
+  "act_duration": 480,
+  "act_description": "\u7761\u89ba",
+  "act_pronunciatio": "\ud83d\ude34",
+  "act_event": [
+    "\u6d63\u78a7",
+    "\u662f",
+    "\u7761\u89ba"
+  ],
+  "act_obj_description": "\u5728\u4f7f\u7528",
+  "act_obj_pronunciatio": "\ud83d\ude95\ud83c\udfc3\u200d",
+  "act_obj_event": [
+    "\u56db\u8173\u66f8\u6848",
+    "\u4f7f\u7528",
+    "\u73fe\u5728"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {},
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": [
+    [
+      36,
+      20
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      36,
+      22
+    ]
+  ]
+}
