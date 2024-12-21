@@ -13,7 +13,7 @@ while read line ; do
     # Get the new name
     new_name="${array[1]}"
     # Replace the name of the file with the new name
-    python ./replace_name.py --folder "$folder_path" --name2replace "$file_name" --new_name "$new_name"
+    python /home/ymj1123/generative_agents_chinese/script_and_settings/replace_name.py --folder "$folder_path" --name2replace "$file_name" --new_name "$new_name"
 done < "$csv_path"
 
 
