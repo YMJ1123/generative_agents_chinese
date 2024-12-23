@@ -1,0 +1,430 @@
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_n1/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_1/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Yuriko Yamamoto/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Yuriko Yamamoto/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/皇上/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/皇上/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/John Lin/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/John Lin/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Sam Moore/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Sam Moore/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Tom Moreno/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Tom Moreno/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Jane Moreno/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Jane Moreno/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Eddy Lin/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Eddy Lin/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Jennifer Moore/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Jennifer Moore/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Ayesha Khan/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Ayesha Khan/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Wolfgang Schulz/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Wolfgang Schulz/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Maria Lopez/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Maria Lopez/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Klaus Mueller/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Klaus Mueller/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Ryan Park/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/personas/Ryan Park/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_palace_zh/reverie/meta.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new4/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1217-3/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f2/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_n2/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_2/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/call --load the_palace/queen_history_init_n15.csv/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_final/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Rajiv Patel/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Rajiv Patel/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/John Lin/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/John Lin/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Maria Lopez/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Maria Lopez/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Klaus Mueller/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Klaus Mueller/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Yuriko Yamamoto/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Yuriko Yamamoto/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Carmen Ortiz/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Carmen Ortiz/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Sam Moore/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Sam Moore/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Eddy Lin/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Eddy Lin/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Giorgio Rossi/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Giorgio Rossi/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Ayesha Khan/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Ayesha Khan/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Tamara Taylor/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Tamara Taylor/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Arthur Burton/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Arthur Burton/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Adam Smith/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Adam Smith/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Carlos Gomez/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Carlos Gomez/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Hailey Johnson/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Hailey Johnson/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Abigail Chen/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Abigail Chen/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Isabella Rodriguez/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Isabella Rodriguez/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Jane Moreno/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Jane Moreno/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Jennifer Moore/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Jennifer Moore/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Ryan Park/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Ryan Park/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Latoya Williams/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Latoya Williams/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Francisco Lopez/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Francisco Lopez/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Mei Lin/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Mei Lin/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Wolfgang Schulz/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Wolfgang Schulz/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Tom Moreno/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_n25_zh/personas/Tom Moreno/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test1/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new1/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_isabella_maria_klaus_zh/personas/Maria Lopez/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_isabella_maria_klaus_zh/personas/Maria Lopez/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_isabella_maria_klaus_zh/personas/Isabella Rodriguez/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_isabella_maria_klaus_zh/personas/Isabella Rodriguez/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_isabella_maria_klaus_zh/personas/Klaus Mueller/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/base_the_ville_isabella_maria_klaus_zh/personas/Klaus Mueller/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test_fin/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1217-1/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1215_/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/test2/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1221/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f4/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_new2/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_n4/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_3/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_4/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1217-2/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/1218_f3/environment/0.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/reverie/meta.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/蘇培盛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/蘇培盛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/頌芝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/頌芝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/太后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/太后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/崔槿汐/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/崔槿汐/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/溫實初/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/溫實初/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/安陵容/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/安陵容/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/年世蘭/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/年世蘭/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/浣碧/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/浣碧/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/沈眉莊/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/沈眉莊/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/果郡王/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/果郡王/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/皇后/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/皇后/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/甄嬛/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/甄嬛/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/曹琴默/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/曹琴默/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/流朱/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/流朱/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/皇帝/bootstrap_memory/scratch.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/personas/皇帝/bootstrap_memory/spatial_memory.json
+/home/ymj1123/generative_agents_chinese/environment/frontend_server/storage/queen_ckpt1_n15/environment/0.json

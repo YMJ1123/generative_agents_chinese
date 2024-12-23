@@ -395,7 +395,7 @@ def run_gpt_prompt_task_decomp(persona,
     print(_cr)
     for count, i in enumerate(_cr): 
       i = to_fullwidth(i)
-
+      p_else=False
       if "（持续时间，分钟：" in i:
         k = [j.strip() for j in i.split("（持续时间，分钟：")]
       elif "（持续时间，分钟" in i:
@@ -430,30 +430,40 @@ def run_gpt_prompt_task_decomp(persona,
         k = [j.strip() for j in i.split("（持續時間，分鐘：")]
       elif "（持续时间：" in i:
         k = [j.strip() for j in i.split("（持续时间：")]
-      elif "（" in i:
-        k = [j.strip() for j in i.split("（")]
       else: 
         print("__func_clean_up ---- else")
-        return 0
+        p_else=True
+        if "（" in i:
+          k = [j.strip() for j in i.split("（")]
+        else:
+          k = [j.strip() for j in i.split("(")]
+        # return 0
       print("i: ",i)
       print("k: ",k)
-      if len(k) < 2:
-        continue
-      task = k[0]
-      if task[-1] == "。": 
-        task = task[:-1]
-      if "，" in k[1]: 
-        duration = k[1].split("，")[0].strip()
-        # 只留數字
-        duration = re.sub(r"\D", "", duration)
-        duration = int(duration)
-      elif "," in k[1]: 
-        duration = k[1].split(",")[0].strip()
-        duration = re.sub(r"\D", "", duration)
-        duration = int(duration)
+
+      if(p_else!=True):
+        if len(k) < 2:
+          continue
+        task = k[0]
+        if task[-1] == "。": 
+          task = task[:-1]
+        if "，" in k[1]: 
+          duration = k[1].split("，")[0].strip()
+          # 只留數字
+          duration = re.sub(r"\D", "", duration)
+          duration = int(duration)
+        elif "," in k[1]: 
+          duration = k[1].split(",")[0].strip()
+          duration = re.sub(r"\D", "", duration)
+          duration = int(duration)
+        else:
+          print("吃屎啦")
+        cr += [[task, duration]]
       else:
-        print("吃屎啦")
-      cr += [[task, duration]]
+        task = k[0]
+        duration=5
+        cr += [[task, duration]]
+
     if "（" in i:
       if "：" in i:
         total_expected_min = (prompt.split("（總持續時間，分鐘")[-1]
@@ -470,7 +480,9 @@ def run_gpt_prompt_task_decomp(persona,
       elif ":" in i:
         total_expected_min = (prompt.split("(總持續時間，分鐘")[-1]
                                     .split("):")[0].strip())
-    
+      else:
+        print("第二個if燒起來啦")
+
     total_expected_min = re.sub(r"\D", "", total_expected_min)
     total_expected_min = int(total_expected_min)
     
